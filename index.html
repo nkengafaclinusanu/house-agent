@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Home-Link | Find Your Next Home</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+</head>
+
+<body>
+
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-house"></i>
+            <span>Home-Link</span>
+        </a>
+
+
+        <nav class="nav-links">
+
+            <a href="#properties" class="active">
+                Browse Homes
+            </a>
+
+            <a href="#">
+                List a Property
+            </a>
+
+            <a href="#how-it-works">
+                How it Works
+            </a>
+
+        </nav>
+
+
+        <div class="nav-actions">
+
+            <a href="#" class="login-link">
+                Login
+            </a>
+
+            <a href="signup.html" class="signup-btn">
+                Sign Up
+            </a>
+
+            <button class="profile-btn">
+                <i class="fa-solid fa-user"></i>
+            </button>
+
+        </div>
+
+
+        <!-- Mobile Menu Button -->
+
+        <button class="mobile-menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <h1>
+                Find Your Next Home,<br>
+                Link with Ease
+            </h1>
+
+            <p>
+                Seamlessly connecting property owners with verified renters.
+                <br>
+                Experience real estate without the traditional friction.
+            </p>
+
+
+            <!-- Search Box -->
+
+            <form class="search-box" id="searchForm">
+
+                <div class="search-item">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <div>
+
+                        <small>LOCATION</small>
+
+                        <input
+                            type="text"
+                            id="location"
+                            placeholder="City, Neighborhood"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="search-item">
+
+                    <i class="fa-solid fa-house"></i>
+
+                    <div>
+
+                        <small>PROPERTY TYPE</small>
+
+                        <select id="propertyType">
+
+                            <option value="">
+                                Any Type
+                            </option>
+
+                            <option value="Apartment">
+                                Apartment
+                            </option>
+
+                            <option value="House">
+                                House
+                            </option>
+
+                            <option value="Retail">
+                                Retail Space
+                            </option>
+
+                            <option value="Room">
+                                Private Room
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="search-item">
+
+                    <i class="fa-solid fa-money-bill"></i>
+
+                    <div>
+
+                        <small>PRICE RANGE</small>
+
+                        <select id="priceRange">
+
+                            <option value="">
+                                Any Price
+                            </option>
+
+                            <option value="1000">
+                                Under $1,000
+                            </option>
+
+                            <option value="3000">
+                                Under $3,000
+                            </option>
+
+                            <option value="5000">
+                                Under $5,000
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="search-btn"
+                >
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    Search Properties
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= OWNER / RENTER ================= -->
+
+    <section
+        class="audience-section"
+        id="how-it-works"
+    >
+
+        <div class="audience-grid">
+
+
+            <!-- Owner Card -->
+
+            <div class="audience-card owner-card">
+
+                <div class="icon-box">
+
+                    <i class="fa-solid fa-key"></i>
+
+                </div>
+
+                <h2>
+                    For Owners
+                </h2>
+
+                <p>
+                    List your space effortlessly. Reach thousands of verified
+                    renters actively looking for a home like yours.
+                    Manage inquiries simply.
+                </p>
+
+
+                <ul>
+
+                    <li>
+
+                        <i class="fa-regular fa-circle-check"></i>
+
+                        Post in under 5 minutes
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-regular fa-circle-check"></i>
+
+                        Verified renter profiles
+
+                    </li>
+
+                </ul>
+
+
+                <a
+                    href="signup.html"
+                    class="dark-btn"
+                >
+                    List Your Property
+                </a>
+
+            </div>
+
+
+
+            <!-- Renter Card -->
+
+            <div class="audience-card renter-card">
+
+                <div class="icon-box">
+
+                    <i class="fa-solid fa-globe"></i>
+
+                </div>
+
+                <h2>
+                    For Renters
+                </h2>
+
+                <p>
+                    Discover unique spaces tailored to your lifestyle.
+                    Connect directly with owners via WhatsApp or call
+                    for immediate access.
+                </p>
+
+
+                <ul>
+
+                    <li>
+
+                        <i class="fa-regular fa-circle-check"></i>
+
+                        Direct WhatsApp integration
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-regular fa-circle-check"></i>
+
+                        Transparent pricing
+
+                    </li>
+
+                </ul>
+
+
+                <a
+                    href="#properties"
+                    class="dark-btn"
+                >
+                    Browse Listings
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FEATURED PROPERTIES ================= -->
+
+    <section
+        class="properties-section"
+        id="properties"
+    >
+
+
+        <div class="section-header">
+
+            <div>
+
+                <h2>
+                    Featured Properties
+                </h2>
+
+                <p>
+                    Hand-picked spaces available now
+                </p>
+
+            </div>
+
+
+            <a href="#" class="view-all">
+
+                View all
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+
+
+        <div
+            class="property-grid"
+            id="propertyGrid"
+        >
+
+
+            <!-- Property 1 -->
+
+            <article
+                class="property-card"
+                data-type="Apartment"
+                data-price="2400"
+                data-location="Downtown District Westside"
+            >
+
+                <div class="property-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80"
+                        alt="Modern bedroom"
+                    >
+
+                    <span class="property-tag">
+                        APARTMENT
+                    </span>
+
+                    <button class="favorite-btn">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="property-content">
+
+                    <div class="property-title-row">
+
+                        <h3>
+                            The Lumin Lofts
+                        </h3>
+
+                        <div class="price">
+
+                            $2,400
+
+                            <span>/mo</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <p class="property-location">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        Downtown District, Westside
+
+                    </p>
+
+
+                    <div class="property-details">
+
+                        <span>
+
+                            <i class="fa-solid fa-bed"></i>
+
+                            2 Beds
+
+                        </span>
+
+                        <span>
+
+                            <i class="fa-solid fa-bath"></i>
+
+                            2 Baths
+
+                        </span>
+
+                        <span>
+
+                            <i class="fa-solid fa-ruler-combined"></i>
+
+                            950 sqft
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- Property 2 -->
+
+            <article
+                class="property-card"
+                data-type="Retail"
+                data-price="4200"
+                data-location="Historic Market Area"
+            >
+
+                <div class="property-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80"
+                        alt="Retail space"
+                    >
+
+                    <span class="property-tag">
+                        RETAIL SPACE
+                    </span>
+
+                    <button class="favorite-btn">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="property-content">
+
+                    <div class="property-title-row">
+
+                        <h3>
+                            Market Square Frontage
+                        </h3>
+
+                        <div class="price">
+
+                            $4,200
+
+                            <span>/mo</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <p class="property-location">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        Historic Market Area
+
+                    </p>
+
+
+                    <div class="property-details">
+
+                        <span>
+
+                            <i class="fa-solid fa-store"></i>
+
+                            Commercial
+
+                        </span>
+
+                        <span>
+
+                            <i class="fa-solid fa-ruler-combined"></i>
+
+                            1,200 sqft
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- Property 3 -->
+
+            <article
+                class="property-card"
+                data-type="Room"
+                data-price="950"
+                data-location="Maplewood Heights"
+            >
+
+                <div class="property-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=900&q=80"
+                        alt="Private room"
+                    >
+
+                    <span class="property-tag green-tag">
+                        PRIVATE ROOM
+                    </span>
+
+                    <button class="favorite-btn">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="property-content">
+
+                    <div class="property-title-row">
+
+                        <h3>
+                            Sunny Bay Window Room
+                        </h3>
+
+                        <div class="price">
+
+                            $950
+
+                            <span>/mo</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <p class="property-location">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        Maplewood Heights
+
+                    </p>
+
+
+                    <div class="property-details">
+
+                        <span>
+
+                            <i class="fa-solid fa-bed"></i>
+
+                            1 Bed
+
+                        </span>
+
+                        <span>
+
+                            <i class="fa-solid fa-user-group"></i>
+
+                            Shared Bath
+
+                        </span>
+
+                        <span>
+
+                            <i class="fa-solid fa-users"></i>
+
+                            2 Housemates
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-grid">
+
+
+            <div>
+
+                <h4>
+                    Company
+                </h4>
+
+                <a href="#">
+                    About
+                </a>
+
+                <a href="#">
+                    Careers
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Support
+                </h4>
+
+                <a href="#">
+                    Help Center
+                </a>
+
+                <a href="#">
+                    Safety
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Legal
+                </h4>
+
+                <a href="#">
+                    Privacy
+                </a>
+
+                <a href="#">
+                    Terms
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Social
+                </h4>
+
+                <div class="social-links">
+
+                    <a href="#">
+
+                        <i class="fa-brands fa-facebook"></i>
+
+                    </a>
+
+                    <a href="#">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+                    <a href="#">
+
+                        <i class="fa-brands fa-linkedin"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            © 2026 Home-Link. Connecting hearts to homes.
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
