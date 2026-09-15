@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
 
     <meta
@@ -10,1418 +8,236 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <meta
-        name="description"
-        content="Home-Link - Find beautiful homes, apartments and properties with ease."
-    >
+    <title>Home-Link | Create Account</title>
 
-    <title>Home-Link | Find Your Next Home</title>
-
-
-    <!-- =========================
-         GOOGLE FONTS
-    ========================== -->
-
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
 
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
         rel="stylesheet"
     >
 
-
-    <!-- =========================
-         FONT AWESOME
-    ========================== -->
-
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    >
-
-
-    <!-- =========================
-         CSS
-    ========================== -->
-
-    <link
-        rel="stylesheet"
-        href="css/style.css"
-    >
-
+    <link rel="stylesheet" href="login.css">
 </head>
-
 
 <body>
 
+    <main class="page-container">
+        <!-- LEFT SIDE -->
+        <section class="welcome-panel">
 
-<!-- =====================================================
-     NAVIGATION
-===================================================== -->
+            <div class="house-background"></div>
 
-<header class="navbar" id="navbar">
+            <div class="dark-overlay"></div>
 
-    <div class="nav-container">
+            <div class="welcome-content">
 
-        <!-- LOGO -->
+                <!-- Logo -->
+                <div class="logo-box"></div>
 
-        <a
-            href="index.html"
-            class="brand"
-        >
+                <h2>Welcome Home.</h2>
 
-            <span class="brand-icon">
-
-                <i class="fa-solid fa-house"></i>
-
-            </span>
-
-            <span class="brand-text">
-                Home<span>-Link</span>
-            </span>
-
-        </a>
-
-
-        <!-- DESKTOP NAVIGATION -->
-
-        <nav class="nav-links">
-
-            <a
-                href="#properties"
-                class="active"
-            >
-                Browse Homes
-            </a>
-
-            <a href="#owners">
-                List a Property
-            </a>
-
-            <a href="#how-it-works">
-                How It Works
-            </a>
-
-        </nav>
-
-
-        <!-- ACTIONS -->
-
-        <div class="nav-actions">
-
-            <a
-                href="login.html"
-                class="login-link"
-            >
-                Login
-            </a>
-
-            <a
-                href="signup.html"
-                class="nav-signup"
-            >
-                Sign Up
-            </a>
-
-        </div>
-
-
-        <!-- MOBILE BUTTON -->
-
-        <button
-            class="menu-btn"
-            id="menuBtn"
-            aria-label="Open navigation menu"
-        >
-
-            <i class="fa-solid fa-bars"></i>
-
-        </button>
-
-    </div>
-
-</header>
-
-
-
-<!-- =====================================================
-     MAIN
-===================================================== -->
-
-<main>
-
-
-<!-- =====================================================
-     HERO SECTION
-===================================================== -->
-
-<section class="hero">
-
-
-    <!-- Background image -->
-
-    <div class="hero-bg"></div>
-
-
-    <!-- Dark gradient -->
-
-    <div class="hero-overlay"></div>
-
-
-    <!-- Decorative elements -->
-
-    <div class="glow glow-one"></div>
-
-    <div class="glow glow-two"></div>
-
-
-    <div class="hero-container">
-
-
-        <!-- HERO TEXT -->
-
-        <div class="hero-content">
-
-
-            <div class="hero-label">
-
-                <i class="fa-solid fa-house"></i>
-
-                FIND YOUR PERFECT PLACE
+                <p class="welcome-text">
+                    Join thousands of verified renters and owners
+                    in the most transparent real estate marketplace.
+                    Your journey starts here.
+                </p>
 
             </div>
 
 
-            <h1>
+            <!-- Bottom Content -->
+            <div class="community-section">
 
-                Find a place
+                <div class="members">
 
-                <br>
+                    <div class="avatars">
 
-                <span>you'll love to call home.</span>
+                        <img
+                            src="image/user1.jpg"
+                            alt="Member"
+                        >
 
-            </h1>
+                        <img
+                            src="image/user2.jpg"
+                            alt="Member"
+                        >
 
-
-            <p>
-
-                Discover beautiful houses, apartments and
-                private spaces from trusted property owners.
-
-                Find your next home without the stress.
-
-            </p>
-
-
-            <!-- SEARCH BOX -->
-
-            <form
-                class="search-box"
-                id="propertySearch"
-            >
-
-
-                <!-- LOCATION -->
-
-                <div class="search-field">
-
-                    <label for="location">
-                        Location
-                    </label>
-
-                    <div class="input-wrapper">
-
-                        <i class="fa-solid fa-location-dot"></i>
-
-                        <input
-                            type="text"
-                            id="location"
-                            placeholder="Buea, Limbe..."
+                        <img
+                            src="image/user3.jpg"
+                            alt="Member"
                         >
 
                     </div>
 
+                    <span>JOIN 50K+ MEMBERS</span>
+
                 </div>
 
 
-                <!-- TYPE -->
+                <div class="testimonial">
 
-                <div class="search-field">
+                    <p>
+                        "Home-Link made finding my apartment effortless.
+                        The direct contact with owners is a game changer."
+                    </p>
 
-                    <label for="propertyType">
-                        Property Type
+                    <span>
+                        <i></i>
+                        Sarah J., Renter
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RIGHT SIDE -->
+        <section class="signup-panel">
+
+            <div class="form-container">
+
+                <h1>Create an Account</h1>
+
+                <p class="subtitle">
+                    Select your role to get started.
+                </p>
+
+
+                <!-- Role Selector -->
+                <div class="role-selector">
+
+                    <button
+                        class="role-btn active"
+                        data-role="renter"
+                    >
+                        Join as Renter
+                    </button>
+
+                    <button
+                        class="role-btn"
+                        data-role="owner"
+                    >
+                        Join as Owner
+                    </button>
+
+                </div>
+
+
+                <!-- Form -->
+                <form id="signupForm">
+
+                    <div class="input-group">
+
+                        <input
+                            type="text"
+                            id="fullname"
+                            placeholder="Full Name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Email Address"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group phone-input">
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Phone Number (WhatsApp enabled)"
+                            required
+                        >
+
+                        <span class="message-icon">
+                            ▢
+                        </span>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Terms -->
+                    <label class="checkbox-container">
+
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            required
+                        >
+
+                        <span class="custom-checkbox"></span>
+
+                        <span class="terms-text">
+                            I agree to the
+                            <a href="#">Terms of Service</a>
+                            and
+                            <a href="#">Privacy Policy.</a>
+                        </span>
+
                     </label>
 
-                    <div class="input-wrapper">
 
-                        <i class="fa-solid fa-building"></i>
-
-                        <select id="propertyType">
-
-                            <option value="">
-                                Any Property
-                            </option>
-
-                            <option value="House">
-                                House
-                            </option>
-
-                            <option value="Apartment">
-                                Apartment
-                            </option>
-
-                            <option value="Private Room">
-                                Private Room
-                            </option>
-
-                            <option value="Commercial">
-                                Commercial
-                            </option>
-
-                        </select>
-
-                    </div>
-
-                </div>
-
-
-                <!-- PRICE -->
-
-                <div class="search-field">
-
-                    <label for="priceRange">
-                        Price
-                    </label>
-
-                    <div class="input-wrapper">
-
-                        <i class="fa-solid fa-money-bill-wave"></i>
-
-                        <select id="priceRange">
-
-                            <option value="">
-                                Any Price
-                            </option>
-
-                            <option value="1000">
-                                Under $1,000
-                            </option>
-
-                            <option value="2000">
-                                Under $2,000
-                            </option>
-
-                            <option value="3000">
-                                Under $3,000
-                            </option>
-
-                            <option value="5000">
-                                Under $5,000
-                            </option>
-
-                        </select>
-
-                    </div>
-
-                </div>
-
-
-                <!-- SEARCH BUTTON -->
-
-                <button
-                    type="submit"
-                    class="search-button"
-                >
-
-                    <i class="fa-solid fa-magnifying-glass"></i>
-
-                    <span>Search</span>
-
-                </button>
-
-            </form>
-
-
-            <!-- TRUST -->
-
-            <div class="hero-trust">
-
-                <div class="avatars">
-
-                    <span>👨🏽</span>
-                    <span>👩🏽</span>
-                    <span>👨🏾</span>
-                    <span>👩🏾</span>
-
-                </div>
-
-                <div>
-
-                    <strong>
-                        10,000+ happy users
-                    </strong>
-
-                    <small>
-                        Finding homes with Home-Link
-                    </small>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- FLOATING INFO CARD -->
-
-        <div class="floating-card">
-
-            <div class="floating-icon">
-
-                <i class="fa-solid fa-shield-halved"></i>
-
-            </div>
-
-            <div>
-
-                <strong>
-                    Trusted Properties
-                </strong>
-
-                <span>
-                    Safe & verified listings
-                </span>
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     QUICK STATS
-===================================================== -->
-
-<section class="stats-section">
-
-    <div class="container stats-grid">
-
-
-        <div class="stat-item">
-
-            <div class="stat-icon">
-                <i class="fa-solid fa-house"></i>
-            </div>
-
-            <div>
-
-                <strong>
-                    10K+
-                </strong>
-
-                <span>
-                    Properties
-                </span>
-
-            </div>
-
-        </div>
-
-
-        <div class="stat-item">
-
-            <div class="stat-icon">
-                <i class="fa-solid fa-users"></i>
-            </div>
-
-            <div>
-
-                <strong>
-                    50K+
-                </strong>
-
-                <span>
-                    Members
-                </span>
-
-            </div>
-
-        </div>
-
-
-        <div class="stat-item">
-
-            <div class="stat-icon">
-                <i class="fa-solid fa-location-dot"></i>
-            </div>
-
-            <div>
-
-                <strong>
-                    20+
-                </strong>
-
-                <span>
-                    Locations
-                </span>
-
-            </div>
-
-        </div>
-
-
-        <div class="stat-item">
-
-            <div class="stat-icon">
-                <i class="fa-solid fa-star"></i>
-            </div>
-
-            <div>
-
-                <strong>
-                    98%
-                </strong>
-
-                <span>
-                    Satisfaction
-                </span>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     OWNER / RENTER
-===================================================== -->
-
-<section
-    class="audience-section container"
-    id="owners"
->
-
-
-    <div class="audience-header">
-
-        <span class="section-label">
-            EVERYTHING YOU NEED
-        </span>
-
-        <h2>
-            A better way to find
-            <span>your next home.</span>
-        </h2>
-
-        <p>
-            Whether you are looking for a place to live
-            or have a property to rent, Home-Link makes
-            the process easier.
-        </p>
-
-    </div>
-
-
-    <div class="audience-grid">
-
-
-        <!-- OWNER -->
-
-        <article class="audience-card owner-card">
-
-            <div class="card-image">
-
-                <img
-                    src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=90"
-                    alt="Beautiful modern house interior"
-                >
-
-                <div class="card-image-overlay"></div>
-
-                <div class="card-icon">
-
-                    <i class="fa-solid fa-key"></i>
-
-                </div>
-
-            </div>
-
-
-            <div class="card-content">
-
-                <span class="small-label">
-                    FOR PROPERTY OWNERS
-                </span>
-
-                <h2>
-                    Turn your property
-                    into opportunity.
-                </h2>
-
-                <p>
-                    List your property and connect with
-                    people actively looking for a home.
-                </p>
-
-
-                <ul>
-
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Easy property listing
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Reach verified renters
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Manage inquiries easily
-                    </li>
-
-                </ul>
-
-
-                <a
-                    href="signup.html?role=owner"
-                    class="card-button"
-                >
-
-                    List Your Property
-
-                    <i class="fa-solid fa-arrow-right"></i>
-
-                </a>
-
-            </div>
-
-        </article>
-
-
-
-        <!-- RENTER -->
-
-        <article class="audience-card renter-card">
-
-            <div class="card-image">
-
-                <img
-                    src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=90"
-                    alt="Beautiful modern house"
-                >
-
-                <div class="card-image-overlay"></div>
-
-                <div class="card-icon">
-
-                    <i class="fa-solid fa-house"></i>
-
-                </div>
-
-            </div>
-
-
-            <div class="card-content">
-
-                <span class="small-label">
-                    FOR RENTERS
-                </span>
-
-                <h2>
-                    Your next home
-                    is waiting.
-                </h2>
-
-                <p>
-                    Explore beautiful properties and
-                    connect directly with property owners.
-                </p>
-
-
-                <ul>
-
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Search by location
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Transparent prices
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Verified properties
-                    </li>
-
-                </ul>
-
-
-                <a
-                    href="#properties"
-                    class="card-button"
-                >
-
-                    Browse Homes
-
-                    <i class="fa-solid fa-arrow-right"></i>
-
-                </a>
-
-            </div>
-
-        </article>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     FEATURED PROPERTIES
-===================================================== -->
-
-<section
-    class="properties-section"
-    id="properties"
->
-
-    <div class="container">
-
-
-        <div class="section-heading">
-
-            <div>
-
-                <span class="section-label">
-                    EXPLORE HOMES
-                </span>
-
-                <h2>
-                    Featured Properties
-                </h2>
-
-                <p>
-                    Discover some of our most beautiful
-                    available properties.
-                </p>
-
-            </div>
-
-
-            <a
-                href="#properties"
-                class="view-all"
-            >
-
-                View All
-
-                <i class="fa-solid fa-arrow-right"></i>
-
-            </a>
-
-        </div>
-
-
-        <!-- PROPERTY GRID -->
-
-        <div
-            class="property-grid"
-            id="propertyGrid"
-        >
-
-
-            <!-- PROPERTY 1 -->
-
-            <article
-                class="property-card"
-                data-location="Buea Molyko"
-                data-type="Apartment"
-                data-price="2400"
-            >
-
-                <div class="property-image">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=90"
-                        alt="Modern apartment interior"
-                    >
-
-                    <span class="property-tag">
-                        APARTMENT
-                    </span>
-
+                    <!-- Button -->
                     <button
-                        class="heart"
-                        aria-label="Save property"
+                        type="submit"
+                        class="create-btn"
                     >
-
-                        <i class="fa-regular fa-heart"></i>
-
+                        Create Account
+                        <span>→</span>
                     </button>
 
-                    <div class="featured-label">
-                        <i class="fa-solid fa-star"></i>
-                        Featured
-                    </div>
+                </form>
 
-                </div>
 
+                <p class="login-text">
 
-                <div class="property-info">
+                    Already have an account?
 
-                    <div class="price-row">
+                    <a href="#">
+                        Log in
+                    </a>
 
-                        <h3>
-                            The Lumina Residence
-                        </h3>
-
-                        <strong>
-                            $2,400
-                            <small>/month</small>
-                        </strong>
-
-                    </div>
-
-
-                    <p class="property-location">
-
-                        <i class="fa-solid fa-location-dot"></i>
-
-                        Molyko, Buea
-
-                    </p>
-
-
-                    <div class="property-meta">
-
-                        <span>
-                            <i class="fa-solid fa-bed"></i>
-                            2 Beds
-                        </span>
-
-                        <span>
-                            <i class="fa-solid fa-bath"></i>
-                            2 Baths
-                        </span>
-
-                        <span>
-                            <i class="fa-regular fa-square"></i>
-                            950 sqft
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- PROPERTY 2 -->
-
-            <article
-                class="property-card"
-                data-location="Limbe Down Beach"
-                data-type="House"
-                data-price="3200"
-            >
-
-                <div class="property-image">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=90"
-                        alt="Luxury modern house exterior"
-                    >
-
-                    <span class="property-tag">
-                        HOUSE
-                    </span>
-
-                    <button
-                        class="heart"
-                        aria-label="Save property"
-                    >
-
-                        <i class="fa-regular fa-heart"></i>
-
-                    </button>
-
-                </div>
-
-
-                <div class="property-info">
-
-                    <div class="price-row">
-
-                        <h3>
-                            Ocean View Residence
-                        </h3>
-
-                        <strong>
-                            $3,200
-                            <small>/month</small>
-                        </strong>
-
-                    </div>
-
-
-                    <p class="property-location">
-
-                        <i class="fa-solid fa-location-dot"></i>
-
-                        Down Beach, Limbe
-
-                    </p>
-
-
-                    <div class="property-meta">
-
-                        <span>
-                            <i class="fa-solid fa-bed"></i>
-                            4 Beds
-                        </span>
-
-                        <span>
-                            <i class="fa-solid fa-bath"></i>
-                            3 Baths
-                        </span>
-
-                        <span>
-                            <i class="fa-regular fa-square"></i>
-                            1,850 sqft
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- PROPERTY 3 -->
-
-            <article
-                class="property-card"
-                data-location="Buea Great Soppo"
-                data-type="Private Room"
-                data-price="950"
-            >
-
-                <div class="property-image">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=90"
-                        alt="Modern bedroom"
-                    >
-
-                    <span class="property-tag">
-                        PRIVATE ROOM
-                    </span>
-
-                    <button
-                        class="heart"
-                        aria-label="Save property"
-                    >
-
-                        <i class="fa-regular fa-heart"></i>
-
-                    </button>
-
-                </div>
-
-
-                <div class="property-info">
-
-                    <div class="price-row">
-
-                        <h3>
-                            Sunny Bay Room
-                        </h3>
-
-                        <strong>
-                            $950
-                            <small>/month</small>
-                        </strong>
-
-                    </div>
-
-
-                    <p class="property-location">
-
-                        <i class="fa-solid fa-location-dot"></i>
-
-                        Great Soppo, Buea
-
-                    </p>
-
-
-                    <div class="property-meta">
-
-                        <span>
-                            <i class="fa-solid fa-bed"></i>
-                            1 Bed
-                        </span>
-
-                        <span>
-                            <i class="fa-solid fa-bath"></i>
-                            Shared Bath
-                        </span>
-
-                        <span>
-                            <i class="fa-solid fa-users"></i>
-                            2 Housemates
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- PROPERTY 4 -->
-
-            <article
-                class="property-card"
-                data-location="Buea Muea"
-                data-type="Apartment"
-                data-price="1800"
-            >
-
-                <div class="property-image">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=90"
-                        alt="Elegant apartment"
-                    >
-
-                    <span class="property-tag">
-                        APARTMENT
-                    </span>
-
-                    <button
-                        class="heart"
-                        aria-label="Save property"
-                    >
-
-                        <i class="fa-regular fa-heart"></i>
-
-                    </button>
-
-                </div>
-
-
-                <div class="property-info">
-
-                    <div class="price-row">
-
-                        <h3>
-                            Modern Green Apartment
-                        </h3>
-
-                        <strong>
-                            $1,800
-                            <small>/month</small>
-                        </strong>
-
-                    </div>
-
-
-                    <p class="property-location">
-
-                        <i class="fa-solid fa-location-dot"></i>
-
-                        Muea, Buea
-
-                    </p>
-
-
-                    <div class="property-meta">
-
-                        <span>
-                            <i class="fa-solid fa-bed"></i>
-                            3 Beds
-                        </span>
-
-                        <span>
-                            <i class="fa-solid fa-bath"></i>
-                            2 Baths
-                        </span>
-
-                        <span>
-                            <i class="fa-regular fa-square"></i>
-                            1,300 sqft
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-        </div>
-
-
-        <p
-            id="noResults"
-            class="no-results"
-        >
-            No properties match your search.
-        </p>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     HOW IT WORKS
-===================================================== -->
-
-<section
-    class="how-section"
-    id="how-it-works"
->
-
-    <div class="container">
-
-
-        <div class="section-heading centered">
-
-            <span class="section-label">
-                SIMPLE & EASY
-            </span>
-
-            <h2>
-                How Home-Link Works
-            </h2>
-
-            <p>
-                Finding a home doesn't have to be complicated.
-            </p>
-
-        </div>
-
-
-        <div class="steps">
-
-
-            <!-- STEP 1 -->
-
-            <div class="step">
-
-                <div class="step-number">
-                    01
-                </div>
-
-                <div class="step-icon">
-
-                    <i class="fa-solid fa-user-plus"></i>
-
-                </div>
-
-                <h3>
-                    Create an Account
-                </h3>
-
-                <p>
-                    Sign up as a renter or property owner
-                    and create your profile.
                 </p>
 
             </div>
 
+        </section>
 
-            <!-- STEP 2 -->
+    </main>
 
-            <div class="step">
 
-                <div class="step-number">
-                    02
-                </div>
-
-                <div class="step-icon">
-
-                    <i class="fa-solid fa-magnifying-glass"></i>
-
-                </div>
-
-                <h3>
-                    Search for a Home
-                </h3>
-
-                <p>
-                    Browse properties by location,
-                    type and price.
-                </p>
-
-            </div>
-
-
-            <!-- STEP 3 -->
-
-            <div class="step">
-
-                <div class="step-number">
-                    03
-                </div>
-
-                <div class="step-icon">
-
-                    <i class="fa-solid fa-comments"></i>
-
-                </div>
-
-                <h3>
-                    Connect
-                </h3>
-
-                <p>
-                    Contact property owners and
-                    arrange the next steps.
-                </p>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     CTA
-===================================================== -->
-
-<section class="cta-section">
-
-    <div class="cta-bg"></div>
-
-    <div class="cta-overlay"></div>
-
-
-    <div class="container cta-content">
-
-        <span class="section-label">
-            YOUR NEXT CHAPTER STARTS HERE
-        </span>
-
-        <h2>
-            Ready to find
-            <br>
-            your next home?
-        </h2>
-
-        <p>
-            Join thousands of people using Home-Link
-            to discover better places to live.
-        </p>
-
-
-        <div class="cta-buttons">
-
-            <a
-                href="signup.html"
-                class="cta-primary"
-            >
-
-                Get Started
-
-                <i class="fa-solid fa-arrow-right"></i>
-
-            </a>
-
-            <a
-                href="#properties"
-                class="cta-secondary"
-            >
-
-                Browse Homes
-
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-</main>
-
-
-
-<!-- =====================================================
-     FOOTER
-===================================================== -->
-
-<footer class="footer">
-
-    <div class="container footer-grid">
-
-
-        <!-- BRAND -->
-
-        <div class="footer-about">
-
-            <a
-                href="index.html"
-                class="brand footer-brand"
-            >
-
-                <span class="brand-icon">
-
-                    <i class="fa-solid fa-house"></i>
-
-                </span>
-
-                <span class="brand-text">
-                    Home<span>-Link</span>
-                </span>
-
-            </a>
-
-
-            <p>
-                Connecting people with places
-                they are proud to call home.
-            </p>
-
-
-            <div class="socials">
-
-                <a href="#" aria-label="Facebook">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-
-                <a href="#" aria-label="Instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-
-                <a href="#" aria-label="WhatsApp">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <!-- COMPANY -->
-
-        <div class="footer-column">
-
-            <h4>
-                Company
-            </h4>
-
-            <a href="#">
-                About Us
-            </a>
-
-            <a href="#">
-                Our Story
-            </a>
-
-            <a href="#">
-                Careers
-            </a>
-
-        </div>
-
-
-        <!-- SUPPORT -->
-
-        <div class="footer-column">
-
-            <h4>
-                Support
-            </h4>
-
-            <a href="#">
-                Help Center
-            </a>
-
-            <a href="#">
-                Safety
-            </a>
-
-            <a href="#">
-                Contact Us
-            </a>
-
-        </div>
-
-
-        <!-- LEGAL -->
-
-        <div class="footer-column">
-
-            <h4>
-                Legal
-            </h4>
-
-            <a href="#">
-                Privacy
-            </a>
-
-            <a href="#">
-                Terms
-            </a>
-
-            <a href="#">
-                Cookies
-            </a>
-
-        </div>
-
-    </div>
-
-
-    <div class="footer-bottom">
-
-        <div class="container">
-
-            © 2026 Home-Link.
-            All rights reserved.
-
-        </div>
-
-    </div>
-
-</footer>
-
-
-
-<!-- =====================================================
-     JAVASCRIPT
-===================================================== -->
-
-<script src="js/app.js"></script>
+    <!-- JavaScript -->
+    <script src="login.js"></script>
 
 </body>
-
 </html>

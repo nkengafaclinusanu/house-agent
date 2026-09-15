@@ -1,0 +1,666 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #eef1f6;
+    color: #1d2633;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.page-container {
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 74px;
+
+    padding: 60px 40px;
+
+    background:
+        radial-gradient(
+            circle at 80% 90%,
+            rgba(195, 239, 231, 0.6),
+            transparent 28%
+        ),
+        linear-gradient(
+            135deg,
+            #f5f6fa,
+            #e9edf5
+        );
+}
+
+
+/* =========================
+   LEFT WELCOME PANEL
+========================= */
+
+.welcome-panel {
+    width: 500px;
+    height: 790px;
+
+    position: relative;
+    overflow: hidden;
+
+    border-radius: 25px;
+
+    background: #1d293b;
+
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.18);
+}
+
+
+/* Background Image */
+
+.house-background {
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+        url("images/house.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    opacity: 0.32;
+}
+
+
+/* Dark Overlay */
+
+.dark-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(15, 28, 48, 0.72),
+            rgba(18, 28, 43, 0.94)
+        );
+}
+
+
+/* Welcome Text */
+
+.welcome-content {
+    position: relative;
+
+    z-index: 2;
+
+    padding: 48px;
+}
+
+
+.logo-box {
+    width: 66px;
+    height: 66px;
+
+    background: #ffffff;
+
+    margin-bottom: 32px;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.welcome-content h2 {
+    font-size: 18px;
+
+    font-weight: 500;
+
+    color: #ffffff;
+
+    margin-bottom: 18px;
+}
+
+
+.welcome-text {
+    max-width: 390px;
+
+    color: #d8dde5;
+
+    font-size: 16px;
+
+    line-height: 1.65;
+
+    letter-spacing: 0.2px;
+}
+
+
+/* =========================
+   COMMUNITY SECTION
+========================= */
+
+.community-section {
+    position: absolute;
+
+    z-index: 2;
+
+    bottom: 48px;
+
+    left: 48px;
+    right: 48px;
+}
+
+
+.members {
+    display: flex;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+
+.avatars {
+    display: flex;
+
+    margin-right: 20px;
+}
+
+
+.avatars img {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 3px solid #243044;
+
+    margin-left: -10px;
+}
+
+
+.avatars img:first-child {
+    margin-left: 0;
+}
+
+
+.members span {
+    color: #d8dde5;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+    font-weight: 500;
+}
+
+
+/* Testimonial */
+
+.testimonial {
+    background:
+        rgba(64, 76, 98, 0.7);
+
+    border-radius: 18px;
+
+    padding: 26px;
+
+    backdrop-filter:
+        blur(8px);
+}
+
+
+.testimonial p {
+    color: #e1e5eb;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+
+    font-style: italic;
+
+    margin-bottom: 18px;
+}
+
+
+.testimonial span {
+    color: #cdd2da;
+
+    font-size: 15px;
+}
+
+
+.testimonial i {
+    width: 20px;
+    height: 1px;
+
+    display: inline-block;
+
+    background: #70d5ca;
+
+    vertical-align: middle;
+
+    margin-right: 8px;
+}
+
+
+/* =========================
+   RIGHT SIGNUP PANEL
+========================= */
+
+.signup-panel {
+    width: 580px;
+    min-height: 790px;
+
+    background:
+        rgba(255, 255, 255, 0.78);
+
+    border-radius: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 50px;
+
+    box-shadow:
+        0 15px 35px rgba(41, 51, 68, 0.12);
+
+    backdrop-filter:
+        blur(10px);
+}
+
+
+.form-container {
+    width: 100%;
+}
+
+
+/* Heading */
+
+.form-container h1 {
+    font-size: 17px;
+
+    font-weight: 600;
+
+    margin-bottom: 12px;
+
+    color: #1f2937;
+}
+
+
+.subtitle {
+    font-size: 16px;
+
+    color: #515966;
+
+    margin-bottom: 38px;
+}
+
+
+/* =========================
+   ROLE SELECTOR
+========================= */
+
+.role-selector {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    background: #dce2ee;
+
+    border-radius: 14px;
+
+    padding: 7px;
+
+    margin-bottom: 30px;
+}
+
+
+.role-btn {
+    border: none;
+
+    background: transparent;
+
+    padding: 16px;
+
+    border-radius: 9px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    color: #303845;
+
+    transition:
+        0.3s ease;
+}
+
+
+.role-btn.active {
+    background: #101c2d;
+
+    color: #ffffff;
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =========================
+   INPUT FIELDS
+========================= */
+
+.input-group {
+    width: 100%;
+
+    margin-bottom: 24px;
+
+    position: relative;
+}
+
+
+.input-group input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background:
+        #e5e9f1;
+
+    height: 58px;
+
+    padding: 0 16px;
+
+    border-radius: 14px;
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+    color: #252c38;
+
+    transition:
+        0.25s ease;
+}
+
+
+.input-group input::placeholder {
+    color: #4f5865;
+}
+
+
+.input-group input:focus {
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 2px rgba(19, 104, 83, 0.2);
+}
+
+
+/* Phone Icon */
+
+.phone-input input {
+    padding-right: 55px;
+}
+
+
+.message-icon {
+    position: absolute;
+
+    right: 18px;
+
+    top: 50%;
+
+    transform:
+        translateY(-50%);
+
+    color: #176b5d;
+
+    font-size: 22px;
+}
+
+
+/* =========================
+   CHECKBOX
+========================= */
+
+.checkbox-container {
+    display: flex;
+
+    align-items: center;
+
+    position: relative;
+
+    cursor: pointer;
+
+    margin: 30px 0 38px;
+
+    font-size: 14px;
+
+    color: #505866;
+}
+
+
+.checkbox-container input {
+    opacity: 0;
+
+    position: absolute;
+}
+
+
+.custom-checkbox {
+    width: 17px;
+    height: 17px;
+
+    border:
+        1px solid #aeb6c0;
+
+    border-radius: 2px;
+
+    margin-right: 10px;
+
+    background: white;
+
+    flex-shrink: 0;
+}
+
+
+.checkbox-container input:checked
++ .custom-checkbox {
+    background: #176b5d;
+
+    border-color: #176b5d;
+}
+
+
+.checkbox-container input:checked
++ .custom-checkbox::after {
+    content: "✓";
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100%;
+
+    font-size: 12px;
+}
+
+
+.terms-text a {
+    text-decoration: none;
+
+    color: #205e57;
+
+    font-weight: 500;
+}
+
+
+/* =========================
+   CREATE BUTTON
+========================= */
+
+.create-btn {
+    width: 100%;
+
+    height: 58px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background:
+        #126a53;
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition:
+        0.3s ease;
+
+    box-shadow:
+        0 8px 18px rgba(18, 106, 83, 0.2);
+}
+
+
+.create-btn:hover {
+    background: #0d5744;
+
+    transform:
+        translateY(-2px);
+}
+
+
+.create-btn span {
+    margin-left: 7px;
+
+    font-size: 19px;
+}
+
+
+/* =========================
+   LOGIN TEXT
+========================= */
+
+.login-text {
+    text-align: center;
+
+    margin-top: 32px;
+
+    font-size: 15px;
+
+    color: #555e69;
+}
+
+
+.login-text a {
+    color: #1d2938;
+
+    text-decoration: none;
+
+    font-weight: 500;
+
+    margin-left: 5px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 1150px) {
+
+    .page-container {
+        gap: 35px;
+    }
+
+    .welcome-panel {
+        width: 430px;
+    }
+
+    .signup-panel {
+        width: 530px;
+    }
+
+}
+
+
+@media (max-width: 900px) {
+
+    .page-container {
+        flex-direction: column;
+
+        padding: 30px 20px;
+    }
+
+    .welcome-panel,
+    .signup-panel {
+        width: 100%;
+
+        max-width: 580px;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .welcome-panel {
+        height: 650px;
+    }
+
+    .signup-panel {
+        padding: 30px 22px;
+
+        min-height: auto;
+    }
+
+    .welcome-content {
+        padding: 30px;
+    }
+
+    .community-section {
+        left: 30px;
+        right: 30px;
+        bottom: 30px;
+    }
+
+    .role-btn {
+        font-size: 14px;
+
+        padding: 14px 8px;
+    }
+
+    .members span {
+        font-size: 11px;
+
+        letter-spacing: 1px;
+    }
+
+}

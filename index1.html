@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="en"><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HomeLink Admin Dashboard</title>
+
+    <link rel="stylesheet" href="style3.css">
+
+    <!-- Font Awesome Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="sidebar" id="sidebar">
+
+        <div class="brand">
+            <div class="brand-logo"></div>
+            <span>HomeLink</span>
+        </div>
+
+        <nav class="sidebar-menu">
+
+            <a href="#" class="menu-item active">
+                <i class="fa-solid fa-house-user"></i>
+                <span>Admin Panel</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <i class="fa-regular fa-building"></i>
+                <span>Owner Center</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <i class="fa-solid fa-building"></i>
+                <span>My Listings</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <i class="fa-solid fa-chart-simple"></i>
+                <span>Analytics</span>
+            </a>
+
+        </nav>
+
+        <div class="profile">
+
+            <img
+                src="https://randomuser.me/api/portraits/women/44.jpg"
+                alt="Alex Johnson"
+            >
+
+            <div>
+                <strong>Alex Johnson</strong>
+                <small>Pro Member</small>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN AREA ================= -->
+    <main class="main">
+
+        <!-- TOP NAVBAR -->
+        <header class="topbar">
+
+            <div class="top-links">
+                <a href="#">Browse Homes</a>
+                <a href="#">Post Property</a>
+            </div>
+
+            <div class="top-icons">
+
+                <button id="notificationBtn">
+                    <i class="fa-regular fa-bell"></i>
+                </button>
+
+                <button id="settingsBtn">
+                    <i class="fa-solid fa-gear"></i>
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= DASHBOARD ================= -->
+        <section class="dashboard">
+
+            <!-- ================= STAT CARDS ================= -->
+            <div class="stats-grid">
+
+                <!-- TOTAL USERS -->
+                <div class="stat-card users-card">
+
+                    <div class="stat-top">
+                        <span>TOTAL USERS</span>
+
+                        <div class="stat-icon dark-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                    </div>
+
+                    <div class="stat-number">
+                        12,450
+                        <span>+4.2%</span>
+                    </div>
+
+                    <div class="user-line">
+                        <svg viewBox="0 0 300 70" preserveAspectRatio="none">
+                            <path
+                                d="M0 50
+                                   C25 25, 45 35, 65 43
+                                   C90 55, 105 45, 130 40
+                                   C155 35, 180 10, 205 25
+                                   C230 40, 245 62, 265 62
+                                   C280 62, 290 48, 300 30"
+                            />
+                        </svg>
+                    </div>
+
+                </div>
+
+
+                <!-- ACTIVE LISTINGS -->
+                <div class="stat-card listings-card">
+
+                    <div class="stat-top">
+
+                        <span>ACTIVE LISTINGS</span>
+
+                        <div class="stat-icon green-icon">
+                            <i class="fa-regular fa-building"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="stat-number">
+                        3,892
+                        <span>+1.8%</span>
+                    </div>
+
+                    <div class="mini-bars">
+
+                        <div style="height: 30%"></div>
+                        <div style="height: 43%"></div>
+                        <div style="height: 56%"></div>
+                        <div style="height: 70%"></div>
+                        <div style="height: 62%"></div>
+                        <div style="height: 80%"></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BOOST REVENUE -->
+                <div class="stat-card revenue-card">
+
+                    <div class="stat-top">
+
+                        <span>BOOST REVENUE</span>
+
+                        <div class="stat-icon white-icon">
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="revenue-number">
+                        48,200FCFA
+                        <span>+12.5%</span>
+                    </div>
+
+                    <div class="revenue-progress">
+
+                        <div class="progress-track">
+                            <div class="progress-fill"></div>
+                        </div>
+
+                        <span>75% to Goal</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= CONTENT GRID ================= -->
+            <div class="content-grid">
+
+
+                <!-- ================= LEFT CONTENT ================= -->
+                <div class="left-content">
+
+                    <!-- RECENT ACTIVITY -->
+                    <section class="activity-section">
+
+                        <div class="section-heading">
+                            <h2>Recent Activity</h2>
+                            <a href="#" id="viewAll">View All</a>
+                        </div>
+
+                        <div class="activity-box">
+
+                            <!-- ACTIVITY 1 -->
+                            <div class="activity">
+
+                                <div class="activity-icon house">
+                                    <i class="fa-regular fa-building"></i>
+                                </div>
+
+                                <div class="activity-text">
+
+                                    <p>
+                                        New property listed:
+                                        <strong>The Overture Penthouse</strong>
+                                    </p>
+
+                                    <small>
+                                        By <strong>Sarah Jenkins</strong> • 2 mins ago
+                                    </small>
+
+                                </div>
+
+                                <span class="status listed">
+                                    Listed
+                                </span>
+
+                            </div>
+
+
+                            <!-- ACTIVITY 2 -->
+                            <div class="activity">
+
+                                <div class="activity-icon flag">
+                                    <i class="fa-solid fa-gavel"></i>
+                                </div>
+
+                                <div class="activity-text">
+
+                                    <p>
+                                        Listing flagged for review:
+                                        <strong>124 Maple St</strong>
+                                    </p>
+
+                                    <small>
+                                        <strong>Automated System</strong> • 15 mins ago
+                                    </small>
+
+                                </div>
+
+                                <span class="status flagged">
+                                    Flagged
+                                </span>
+
+                            </div>
+
+
+                            <!-- ACTIVITY 3 -->
+                            <div class="activity">
+
+                                <div class="activity-icon money">
+                                    <i class="fa-regular fa-money-bill-1"></i>
+                                </div>
+
+                                <div class="activity-text">
+
+                                    <p>
+                                        Boost purchased for
+                                        <strong>Villa Rosa</strong>
+                                    </p>
+
+                                    <small>
+                                        By <strong>Marcus Thorne</strong> • 1 hr ago
+                                    </small>
+
+                                </div>
+
+                                <span class="status revenue">
+                                    Revenue
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- USER GROWTH -->
+                    <section class="growth-section">
+
+                        <h2>User Growth Trend</h2>
+
+                        <div class="growth-card">
+
+                            <div class="chart-title">
+                                Active Weekly Users (Thousands)
+                            </div>
+
+                            <div class="chart">
+
+                                <div class="bar-container">
+                                    <div class="bar" style="height: 38%"></div>
+                                    <span>M</span>
+                                </div>
+
+                                <div class="bar-container">
+                                    <div class="bar" style="height: 52%"></div>
+                                    <span>T</span>
+                                </div>
+
+                                <div class="bar-container">
+                                    <div class="bar" style="height: 62%"></div>
+                                    <span>W</span>
+                                </div>
+
+                                <div class="bar-container">
+                                    <div class="bar" style="height: 46%"></div>
+                                    <span>T</span>
+                                </div>
+
+                                <div class="bar-container">
+                                    <div class="bar" style="height: 83%"></div>
+                                    <span>F</span>
+                                </div>
+
+                                <div class="bar-container">
+                                    <div class="bar dark-bar" style="height: 96%"></div>
+                                    <span>S</span>
+                                </div>
+
+                                <div class="bar-container">
+                                    <div class="bar navy-bar" style="height: 88%"></div>
+                                    <span>S</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+                <!-- ================= VERIFICATION QUEUE ================= -->
+                <aside class="verification">
+
+                    <div class="verification-heading">
+
+                        <h2>Verification<br>Queue</h2>
+
+                        <span>
+                            <strong>12</strong>
+                            Pending
+                        </span>
+
+                    </div>
+
+
+                    <!-- PROPERTY 1 -->
+                    <div class="property-card">
+
+                        <div class="property-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80"
+                                alt="Skyline Loft Apartment"
+                            >
+
+                            <span class="property-id">
+                                ID: #88392
+                            </span>
+
+                        </div>
+
+                        <div class="property-content">
+
+                            <h3>Skyline Loft Appt</h3>
+
+                            <p class="owner">
+                                <i class="fa-regular fa-user"></i>
+                                Elena Rostova
+                            </p>
+
+                            <div class="property-actions">
+
+                                <button
+                                    class="approve-btn"
+                                    onclick="approveProperty(this)"
+                                >
+                                    <i class="fa-solid fa-check"></i>
+                                    Approve
+                                </button>
+
+                                <button
+                                    class="review-btn"
+                                    onclick="reviewProperty('Skyline Loft Appt')"
+                                >
+                                    Review
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PROPERTY 2 -->
+                    <div class="property-card">
+
+                        <div class="property-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?auto=format&fit=crop&w=900&q=80"
+                                alt="Suburban Haven"
+                            >
+
+                            <span class="property-id">
+                                ID: #88391
+                            </span>
+
+                        </div>
+
+                        <div class="property-content">
+
+                            <h3>Suburban Haven</h3>
+
+                            <p class="owner">
+                                <i class="fa-regular fa-user"></i>
+                                James Chen
+                            </p>
+
+                            <div class="property-actions">
+
+                                <button
+                                    class="approve-btn"
+                                    onclick="approveProperty(this)"
+                                >
+                                    <i class="fa-solid fa-check"></i>
+                                    Approve
+                                </button>
+
+                                <button
+                                    class="review-btn"
+                                    onclick="reviewProperty('Suburban Haven')"
+                                >
+                                    Review
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HomeLink Admin Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="sidebar" id="sidebar">
+
+        <div class="brand">
+            <div class="brand-logo"></div>
+            <span>HomeLink</span>
+        </div>
+
+        <nav class="sidebar-menu">
+
+            <a href="#" class="menu-item active">
+                <i class="fa-solid fa-house-user"></i>
+                <span>Admin Panel</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <i class="fa-regular fa-building"></i>
+                <span>Owner Center</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <i class="fa-solid fa-building"></i>
+                <span>My Listings</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <i class="fa-solid fa-chart-simple"></i>
+                <span>Analytics</span>
+            </a>
+
+        </nav>
+
+        <div class="profile">
+
+            <img
+                src="https://randomuser.me/api/portraits/women/44.jpg"
+                alt="Alex Johnson"
+            >
+
+            <div>
+                <strong>Alex Johnson</strong>
+                <small>Pro Member</small>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN AREA ================= -->
+    <main class="main">
+
+        <!-- TOP NAVBAR -->
+        <header class="topbar">
+
+            <div class="top-links">
+                <a href="#">Browse Homes</a>
+                <a href="#">Post Property</a>
+            </div>
+
+            <div class="top-icons">
+
+                <button id="notificationBtn">
+                    <i class="fa-regular fa-bell"></i>
+                </button>
+
+                <button id="settingsBtn">
+                    <i class="fa-solid fa-gear"></i>
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= DASHBOARD ================= -->
+        <section class="dashboard">
+
+            <!-- ================= STAT CARDS ================= -->
+            <div class="stats-grid">
+
+                <!-- TOTAL USERS -->
+                <div class="stat-card users-card">
+
+                    <div class="stat-top">
+                        <span>TOTAL USERS</span>
+
+                        <div class="stat-icon dark-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                    </div>
+
+                    <div class="stat-number">
+                        12,450
+                        <span>+4.2%</span>
+                    </div>
+
+                    <div class="user-line">
+                        <svg viewBox="0 0 300 70" preserveAspectRatio="none">
+                            <path
+                                d="M0 50
+                                   C25 25, 45 35, 65 43
+                                   C90 55, 105 45, 130 40
+                                   C155 35, 180 10, 205 25
+                                   C230 40, 245 62, 265 62
+                                   C280 62, 290 48, 300 30"
+                            />
+                        </svg>
+                    </div>
+
+                </div>
+
+
+                <!-- ACTIVE LISTINGS -->
+                <div class="stat-card listings-card">
+
+                    <div class="stat-top">
+
+                        <span>ACTIVE LISTINGS</span>
+
+                        <div class="stat-icon green-icon">
+                            <i class="fa-regular fa-building"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="stat-number">
+                        3,892
+                        <span>+1.8%</span>
+                    </div>
+
+                    <div class="mini-bars">
+
+                        <div style="height: 30%"></div>
+                        <div style="height: 43%"></div>
+                        <div style="height: 56%"></div>
+                        <div style="height: 70%"></div>
+                        <div style="height: 62%"></div>
+                        <div style="height: 80%"></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BOOST REVENUE -->
+                <div class="stat-card revenue-card">
+
+                    <div class="stat-top">
+
+                        <span>BOOST REVENUE</span>
+
+                        <div class="stat-icon white-icon">
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="revenue-number">
+                        48,200FCFA
+                        <span>+12.5%</span>
+                    </div>
+
+                    <div class="revenue-progress">
+
+                        <div class="progress-track">
+                            <div class="progress-fill"></div>
+                        </div>
+
+                        <span>75% to Goal</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= CONTENT GRID ================= -->
+            <div class="content-grid">
+
+
+                <!-- ================= LEFT CONTENT ================= -->
+                <div class="left-content">
+
+                    <!-- RECENT ACTIVITY -->
+                    <section class="activity-section">
+
+                        <div class="section-heading">
+                            <h2>Recent Activity</h2>
+                            <a href="#" id="viewAll">View All</a>
+                        </div>
+
+                        <div class="activity-box">
+
+                            <!-- ACTIVITY 1 -->
+                            <div class="activity">
+
+                                <div class="activity-icon house">
+                                    <i class="fa-regular fa-building"></i>
+                                </div>
+
+                                <div class="activity-text">
+
+                                    <p>
+                                        New property listed:
+                                        <strong>The Overture Penthouse</strong>
+                                    </p>
+
+                                    <small>
+                                        By <strong>Sarah Jenkins</strong> • 2 mins ago
+                                    </small>
+
+                                </div>
+
+                                <span class="status listed">
+                                    Listed
+                                </span>
+
+                            </div>
+
+
+                            <!-- ACTIVITY 2 -->
+                            <div class="activity">
+
+                                <div class="activity-icon flag">
+                                    <i class="fa-solid fa-gavel"></i>
+                                </div>
+
+                                <div class="activity-text">
+
+                                    <p>
+                                        Listing flagged for review:
+                                        <strong>124 Maple St</strong>
+                                    </p>
+
+                                    <small>
+                                        <strong>Automated System</strong> • 15 mins ago
+                                    </small>
+
+                                </div>
+
+                                <span class="status flagged">
+                                    Flagged
+                                </span>
+
+                            </div>
+
+
+                            <!-- ACTIVITY 3 -->
+                            <div class="activity">
+
+                                <div class="activity-icon money">
+                                    <i class="fa-regular fa-money-bill-1"></i>
+                                </div>
+
+                                <div class="activity-text">
+
+                                    <p>
+                                        Boost purchased for
+                                        <strong>Villa Rosa</strong>
+                                    </p>
+
+                                    <small>
+                                        By <strong>Marcus Thorne</strong> • 1 hr ago
+                                    </small>
+
+                                </div>
+
+                                <span class="status revenue">
+                                    Revenue
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- USER GROWTH -->
+                    <section class="growth-section">
+
+                        <h2>User Growth Trend</h2>
+
+                        <div class="growth-card">
+
+                            <div class="chart-title">
+                                Active Weekly Users (Thousands)
+                            </div>
+
+                            <div class="chart">
+
+                                <div class="bar-container">
+                                    <div class="bar" style="height: 38%"></div>
+                                    <span>M</span>
+                                </div>
+
+                                <div class="bar-container">
+                                    <div class="bar" style="height: 52%"></div>
+                                    <span>T</span>
+                                </div>
+
+                                <div class="bar-container">
+                                    <div class="bar" style="height: 62%"></div>
+                                    <span>W</span>
+                                </div>
+
+                                <div class="bar-container">
+                                    <div class="bar" style="height: 46%"></div>
+                                    <span>T</span>
+                                </div>
+
+                                <div class="bar-container">
+                                    <div class="bar" style="height: 83%"></div>
+                                    <span>F</span>
+                                </div>
+
+                                <div class="bar-container">
+                                    <div class="bar dark-bar" style="height: 96%"></div>
+                                    <span>S</span>
+                                </div>
+
+                                <div class="bar-container">
+                                    <div class="bar navy-bar" style="height: 88%"></div>
+                                    <span>S</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+                <!-- ================= VERIFICATION QUEUE ================= -->
+                <aside class="verification">
+
+                    <div class="verification-heading">
+
+                        <h2>Verification<br>Queue</h2>
+
+                        <span>
+                            <strong>12</strong>
+                            Pending
+                        </span>
+
+                    </div>
+
+
+                    <!-- PROPERTY 1 -->
+                    <div class="property-card">
+
+                        <div class="property-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80"
+                                alt="Skyline Loft Apartment"
+                            >
+
+                            <span class="property-id">
+                                ID: #88392
+                            </span>
+
+                        </div>
+
+                        <div class="property-content">
+
+                            <h3>Skyline Loft Appt</h3>
+
+                            <p class="owner">
+                                <i class="fa-regular fa-user"></i>
+                                Elena Rostova
+                            </p>
+
+                            <div class="property-actions">
+
+                                <button
+                                    class="approve-btn"
+                                    onclick="approveProperty(this)"
+                                >
+                                    <i class="fa-solid fa-check"></i>
+                                    Approve
+                                </button>
+
+                                <button
+                                    class="review-btn"
+                                    onclick="reviewProperty('Skyline Loft Appt')"
+                                >
+                                    Review
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PROPERTY 2 -->
+                    <div class="property-card">
+
+                        <div class="property-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?auto=format&fit=crop&w=900&q=80"
+                                alt="Suburban Haven"
+                            >
+
+                            <span class="property-id">
+                                ID: #88391
+                            </span>
+
+                        </div>
+
+                        <div class="property-content">
+
+                            <h3>Suburban Haven</h3>
+
+                            <p class="owner">
+                                <i class="fa-regular fa-user"></i>
+                                James Chen
+                            </p>
+
+                            <div class="property-actions">
+
+                                <button
+                                    class="approve-btn"
+                                    onclick="approveProperty(this)"
+                                >
+                                    <i class="fa-solid fa-check"></i>
+                                    Approve
+                                </button>
+
+                                <button
+                                    class="review-btn"
+                                    onclick="reviewProperty('Suburban Haven')"
+                                >
+                                    Review
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HomeLink Admin Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="sidebar" id="sidebar">
+
+        <div class="brand">
+            <div class="brand-logo"></div>
+            <span>HomeLink</span>
+        </div>
+
+        <nav class="sidebar-menu">
+
+            <a href="#" class="menu-item active">
+                <i class="fa-solid fa-house-user"></i>
+                <span>Admin Panel</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <i class="fa-regular fa-building"></i>
+                <span>Owner Center</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <i class="fa-solid fa-building"></i>
+                <span>My Listings</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <i class="fa-solid fa-chart-simple"></i>
+                <span>Analytics</span>
+            </a>
+
+        </nav>
+
+        <div class="profile">
+
+            <img
+                src="https://randomuser.me/api/portraits/women/44.jpg"
+                alt="Alex Johnson"
+            >
+
+            <div>
+                <strong>Alex Johnson</strong>
+                <small>Pro Member</small>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN AREA ================= -->
+    <main class="main">
+
+        <!-- TOP NAVBAR -->
+        <header class="topbar">
+
+            <div class="top-links">
+                <a href="#">Browse Homes</a>
+                <a href="#">Post Property</a>
+            </div>
+
+            <div class="top-icons">
+
+                <button id="notificationBtn">
+                    <i class="fa-regular fa-bell"></i>
+                </button>
+
+                <button id="settingsBtn">
+                    <i class="fa-solid fa-gear"></i>
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= DASHBOARD ================= -->
+        <section class="dashboard">
+
+            <!-- ================= STAT CARDS ================= -->
+            <div class="stats-grid">
+
+                <!-- TOTAL USERS -->
+                <div class="stat-card users-card">
+
+                    <div class="stat-top">
+                        <span>TOTAL USERS</span>
+
+                        <div class="stat-icon dark-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                    </div>
+
+                    <div class="stat-number">
+                        12,450
+                        <span>+4.2%</span>
+                    </div>
+
+                    <div class="user-line">
+                        <svg viewBox="0 0 300 70" preserveAspectRatio="none">
+                            <path
+                                d="M0 50
+                                   C25 25, 45 35, 65 43
+                                   C90 55, 105 45, 130 40
+                                   C155 35, 180 10, 205 25
+                                   C230 40, 245 62, 265 62
+                                   C280 62, 290 48, 300 30"
+                            />
+                        </svg>
+                    </div>
+
+                </div>
+
+
+                <!-- ACTIVE LISTINGS -->
+                <div class="stat-card listings-card">
+
+                    <div class="stat-top">
+
+                        <span>ACTIVE LISTINGS</span>
+
+                        <div class="stat-icon green-icon">
+                            <i class="fa-regular fa-building"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="stat-number">
+                        3,892
+                        <span>+1.8%</span>
+                    </div>
+
+                    <div class="mini-bars">
+
+                        <div style="height: 30%"></div>
+                        <div style="height: 43%"></div>
+                        <div style="height: 56%"></div>
+                        <div style="height: 70%"></div>
+                        <div style="height: 62%"></div>
+                        <div style="height: 80%"></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BOOST REVENUE -->
+                <div class="stat-card revenue-card">
+
+                    <div class="stat-top">
+
+                        <span>BOOST REVENUE</span>
+
+                        <div class="stat-icon white-icon">
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="revenue-number">
+                        48,200FCFA
+                        <span>+12.5%</span>
+                    </div>
+
+                    <div class="revenue-progress">
+
+                        <div class="progress-track">
+                            <div class="progress-fill"></div>
+                        </div>
+
+                        <span>75% to Goal</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= CONTENT GRID ================= -->
+            <div class="content-grid">
+
+
+                <!-- ================= LEFT CONTENT ================= -->
+                <div class="left-content">
+
+                    <!-- RECENT ACTIVITY -->
+                    <section class="activity-section">
+
+                        <div class="section-heading">
+                            <h2>Recent Activity</h2>
+                            <a href="#" id="viewAll">View All</a>
+                        </div>
+
+                        <div class="activity-box">
+
+                            <!-- ACTIVITY 1 -->
+                            <div class="activity">
+
+                                <div class="activity-icon house">
+                                    <i class="fa-regular fa-building"></i>
+                                </div>
+
+                                <div class="activity-text">
+
+                                    <p>
+                                        New property listed:
+                                        <strong>The Overture Penthouse</strong>
+                                    </p>
+
+                                    <small>
+                                        By <strong>Sarah Jenkins</strong> • 2 mins ago
+                                    </small>
+
+                                </div>
+
+                                <span class="status listed">
+                                    Listed
+                                </span>
+
+                            </div>
+
+
+                            <!-- ACTIVITY 2 -->
+                            <div class="activity">
+
+                                <div class="activity-icon flag">
+                                    <i class="fa-solid fa-gavel"></i>
+                                </div>
+
+                                <div class="activity-text">
+
+                                    <p>
+                                        Listing flagged for review:
+                                        <strong>124 Maple St</strong>
+                                    </p>
+
+                                    <small>
+                                        <strong>Automated System</strong> • 15 mins ago
+                                    </small>
+
+                                </div>
+
+                                <span class="status flagged">
+                                    Flagged
+                                </span>
+
+                            </div>
+
+
+                            <!-- ACTIVITY 3 -->
+                            <div class="activity">
+
+                                <div class="activity-icon money">
+                                    <i class="fa-regular fa-money-bill-1"></i>
+                                </div>
+
+                                <div class="activity-text">
+
+                                    <p>
+                                        Boost purchased for
+                                        <strong>Villa Rosa</strong>
+                                    </p>
+
+                                    <small>
+                                        By <strong>Marcus Thorne</strong> • 1 hr ago
+                                    </small>
+
+                                </div>
+
+                                <span class="status revenue">
+                                    Revenue
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- USER GROWTH -->
+                    <section class="growth-section">
+
+                        <h2>User Growth Trend</h2>
+
+                        <div class="growth-card">
+
+                            <div class="chart-title">
+                                Active Weekly Users (Thousands)
+                            </div>
+
+                            <div class="chart">
+
+                                <div class="bar-container">
+                                    <div class="bar" style="height: 38%"></div>
+                                    <span>M</span>
+                                </div>
+
+                                <div class="bar-container">
+                                    <div class="bar" style="height: 52%"></div>
+                                    <span>T</span>
+                                </div>
+
+                                <div class="bar-container">
+                                    <div class="bar" style="height: 62%"></div>
+                                    <span>W</span>
+                                </div>
+
+                                <div class="bar-container">
+                                    <div class="bar" style="height: 46%"></div>
+                                    <span>T</span>
+                                </div>
+
+                                <div class="bar-container">
+                                    <div class="bar" style="height: 83%"></div>
+                                    <span>F</span>
+                                </div>
+
+                                <div class="bar-container">
+                                    <div class="bar dark-bar" style="height: 96%"></div>
+                                    <span>S</span>
+                                </div>
+
+                                <div class="bar-container">
+                                    <div class="bar navy-bar" style="height: 88%"></div>
+                                    <span>S</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+                <!-- ================= VERIFICATION QUEUE ================= -->
+                <aside class="verification">
+
+                    <div class="verification-heading">
+
+                        <h2>Verification<br>Queue</h2>
+
+                        <span>
+                            <strong>12</strong>
+                            Pending
+                        </span>
+
+                    </div>
+
+
+                    <!-- PROPERTY 1 -->
+                    <div class="property-card">
+
+                        <div class="property-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80"
+                                alt="Skyline Loft Apartment"
+                            >
+
+                            <span class="property-id">
+                                ID: #88392
+                            </span>
+
+                        </div>
+
+                        <div class="property-content">
+
+                            <h3>Skyline Loft Appt</h3>
+
+                            <p class="owner">
+                                <i class="fa-regular fa-user"></i>
+                                Elena Rostova
+                            </p>
+
+                            <div class="property-actions">
+
+                                <button
+                                    class="approve-btn"
+                                    onclick="approveProperty(this)"
+                                >
+                                    <i class="fa-solid fa-check"></i>
+                                    Approve
+                                </button>
+
+                                <button
+                                    class="review-btn"
+                                    onclick="reviewProperty('Skyline Loft Appt')"
+                                >
+                                    Review
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PROPERTY 2 -->
+                    <div class="property-card">
+
+                        <div class="property-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?auto=format&fit=crop&w=900&q=80"
+                                alt="Suburban Haven"
+                            >
+
+                            <span class="property-id">
+                                ID: #88391
+                            </span>
+
+                        </div>
+
+                        <div class="property-content">
+
+                            <h3>Suburban Haven</h3>
+
+                            <p class="owner">
+                                <i class="fa-regular fa-user"></i>
+                                James Chen
+                            </p>
+
+                            <div class="property-actions">
+
+                                <button
+                                    class="approve-btn"
+                                    onclick="approveProperty(this)"
+                                >
+                                    <i class="fa-solid fa-check"></i>
+                                    Approve
+                                </button>
+
+                                <button
+                                    class="review-btn"
+                                    onclick="reviewProperty('Suburban Haven')"
+                                >
+                                    Review
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script3.js"></script>
+
+</body>
+</html>

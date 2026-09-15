@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HomeLink | Find Your Next Home</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-house"></i>
+            </div>
+            <span>HomeLink</span>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#properties">Browse Homes</a>
+            <a href="#owners">Post Property</a>
+        </nav>
+
+        <div class="nav-right">
+            <a href="#" class="login">Login</a>
+            <button class="signup">Sign up</button>
+
+            <div class="profile">
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </div>
+
+        <button class="menu-btn" id="menuBtn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                THE PROFESSIONAL STANDARD
+            </div>
+
+            <h1>
+                Discover Exceptional<br>
+                Properties.
+            </h1>
+
+            <p class="hero-text">
+                HomeLink connects discerning buyers and renters with verified,
+                high-quality real estate opportunities. Experience effortless
+                authority in every search.
+            </p>
+
+
+            <!-- SEARCH BOX -->
+            <div class="search-box">
+
+                <div class="location-input">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="text"
+                        id="location"
+                        placeholder="Location, neighborhood, or building..."
+                    >
+                </div>
+
+
+                <div class="property-select">
+
+                    <i class="fa-solid fa-house"></i>
+
+                    <select id="propertyType">
+                        <option value="">Property Type</option>
+                        <option value="studio">Studios & Lofts</option>
+                        <option value="apartment">Luxury Apartments</option>
+                        <option value="commercial">Commercial Spaces</option>
+                        <option value="estate">Private Estates</option>
+                    </select>
+
+                </div>
+
+
+                <button class="search-btn" id="searchBtn">
+                    Search Listings
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+
+            <!-- STATS -->
+            <div class="hero-stats">
+
+                <div class="stat">
+                    <strong>15K+</strong>
+                    <span>VERIFIED LISTINGS</span>
+                </div>
+
+                <div class="stat">
+                    <strong>4.9/5</strong>
+                    <span>CLIENT TRUST SCORE</span>
+                </div>
+
+                <div class="stat">
+                    <strong>24hr</strong>
+                    <span>APPROVAL PROCESS</span>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= PROPERTY CATEGORIES ================= -->
+    <section class="categories" id="properties">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="small-label">CURATED PORTFOLIOS</span>
+
+                <h2>Explore by Property Type</h2>
+            </div>
+
+            <a href="#" class="view-all">
+                View All Categories
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+        <div class="category-grid">
+
+            <div class="category-card studio">
+                <div class="card-overlay"></div>
+                <div class="category-title">
+                    Studios & Lofts
+                </div>
+            </div>
+
+            <div class="category-card apartments">
+                <div class="card-overlay"></div>
+                <div class="category-title">
+                    Luxury Apartments
+                </div>
+            </div>
+
+            <div class="category-card commercial">
+                <div class="card-overlay"></div>
+                <div class="category-title">
+                    Commercial Spaces
+                </div>
+            </div>
+
+            <div class="category-card estates">
+                <div class="card-overlay"></div>
+                <div class="category-title">
+                    Private Estates
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PREMIUM LISTINGS ================= -->
+    <section class="premium">
+
+        <div class="premium-intro">
+
+            <span class="verified-label">
+                <i class="fa-solid fa-circle-check"></i>
+                VERIFIED SELECTION
+            </span>
+
+            <h2>
+                Premium<br>
+                Listings.
+            </h2>
+
+            <p>
+                Properties vetted for excellence. Our verified badge
+                ensures accurate representation, confirmed ownership,
+                and high-quality standards.
+            </p>
+
+            <button class="outline-btn">
+                View All Verified
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+
+        <div class="property-grid">
+
+
+            <!-- PROPERTY 1 -->
+            <article class="property-card">
+
+                <div class="property-image image-one">
+
+                    <span class="verified">
+                        <i class="fa-solid fa-circle-check"></i>
+                        VERIFIED
+                    </span>
+
+                    <button class="heart">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>$2,450,000</h3>
+
+                    <p>
+                        1204 Willowbrook Lane, River North District
+                    </p>
+
+                    <div class="property-details">
+
+                        <span>
+                            <i class="fa-solid fa-bed"></i>
+                            4 Beds
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-bath"></i>
+                            3.5 Baths
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-ruler-combined"></i>
+                            3,200 Sqft
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROPERTY 2 -->
+            <article class="property-card">
+
+                <div class="property-image image-two">
+
+                    <span class="verified">
+                        <i class="fa-solid fa-circle-check"></i>
+                        VERIFIED
+                    </span>
+
+                    <button class="heart">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>$4,100 <small>/ mo</small></h3>
+
+                    <p>
+                        88 Corporate Blvd, Suite 44A, Downtown
+                    </p>
+
+                    <div class="property-details">
+
+                        <span>
+                            <i class="fa-solid fa-bed"></i>
+                            2 Beds
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-bath"></i>
+                            2 Baths
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-ruler-combined"></i>
+                            1,450 Sqft
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROPERTY 3 -->
+            <article class="property-card">
+
+                <div class="property-image image-three">
+
+                    <span class="verified">
+                        <i class="fa-solid fa-circle-check"></i>
+                        VERIFIED
+                    </span>
+
+                    <button class="heart">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>$1,250,000</h3>
+
+                    <p>
+                        The Old Foundry Building, Studio 5,
+                        Arts District
+                    </p>
+
+                    <div class="property-details">
+
+                        <span>
+                            <i class="fa-solid fa-building"></i>
+                            Commercial
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-ruler-combined"></i>
+                            4,500 Sqft
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROPERTY OWNER SECTION ================= -->
+    <section class="owner-section" id="owners">
+
+        <div class="owner-content">
+
+            <span class="owner-label">
+                FOR PROPERTY OWNERS
+            </span>
+
+            <h2>
+                Maximize Your<br>
+                Property's Potential.
+            </h2>
+
+            <p>
+                List your property on HomeLink and reach a curated
+                network of serious buyers and renters. Our platform
+                offers institutional-grade tools to manage listings,
+                track engagement, and secure the best value.
+            </p>
+
+
+            <ul class="benefits">
+
+                <li>
+                    <i class="fa-solid fa-check"></i>
+                    Access to verified, high-intent audiences
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-check"></i>
+                    Professional analytics and view tracking
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-check"></i>
+                    Dedicated support from real estate experts
+                </li>
+
+            </ul>
+
+
+            <div class="owner-buttons">
+
+                <button class="start-btn">
+                    Start Posting Free
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+
+                <button class="learn-btn">
+                    Learn about Premium
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="owner-image">
+
+            <div class="performance-card">
+
+                <span>LISTING PERFORMANCE</span>
+
+                <strong>12,450</strong>
+
+                <small>views</small>
+
+                <div class="chart">
+                    <span></span>
+                </div>
+
+                <p>
+                    <i class="fa-solid fa-arrow-up"></i>
+                    +24% this week
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="footer-brand">
+
+            <div class="footer-logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+
+                <span>HomeLink</span>
+            </div>
+
+            <p>
+                The professional standard in real estate
+                connections. Effortless authority in every search.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>COMPANY</h4>
+
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>SUPPORT</h4>
+
+            <a href="#">Help Center</a>
+            <a href="#">Contact</a>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="script.js"></script>
+
+</body>
+</html>
